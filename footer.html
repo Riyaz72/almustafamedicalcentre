@@ -1,0 +1,116 @@
+<footer class="footer">
+    <div class="footer_container">
+        <div class="container">
+            <div class="row">
+                
+                <!-- Footer - About -->
+                <div class="col-lg-4 footer_col">
+                    <div class="footer_about">
+                        <div class="footer_logo_container">
+                            <a href="#" class="d-flex flex-column align-items-center justify-content-center">
+                                <div class="logo_content">
+                                    <div class="logo d-flex flex-row align-items-center justify-content-center">
+                                        <div class="logo_text" style="color: #213a41;">AL MUSTAFA<span></span></div>
+                                        <!-- <div class="logo_box">+</div> -->
+                                    </div>
+                                    <div class="logo_sub" style="color: #213a41;"> MEDICAL CENTRE </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="footer_about_text">
+                            <p class="text-justify">True healthcare goes beyond treatment—it’s about prevention, wellness, & a better quality of life for all.</p>
+                        </div>
+                        <ul class="footer_about_list">
+                            <li><div class="footer_about_icon"><img src="images/phone-call.svg" alt=""></div><span>+65 6209 0000</span></li>
+                            <li><div class="footer_about_icon"><img src="images/envelope.svg" alt=""></div><span>admin@almustafa.com.sg</span></li>
+                            <li><div class="footer_about_icon"><img src="images/placeholder.svg" alt=""></div><span> Changi Road,ICON@Changi,Singapore 419741</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Footer - Links -->
+                <div class="col-lg-4 footer_col">
+                    <div class="footer_links footer_column">
+                        <div class="footer_title">LINKS</div>
+                        <ul>
+                            <li><a href="about.html">About us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="news.html">Corporate</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <!-- <li><a href="#">Our Screening Program</a></li> -->
+                            <li><a href="#">Terms & Conditions</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Footer - News -->
+                <div class="col-lg-4 footer_col">
+                    <div class="footer_news footer_column">
+                        <div class="footer_title">QUOTATIONS</div>
+                        <ul>
+                            <li>
+                                <div class="footer_news_title"><a href="#">Your future self will thank you for taking  care of <br>
+                                    your health today.</a></div>
+                                <div class=" footer_news_date dynamic-date"></div>
+                            </li>
+                            <li>
+                                <div class="footer_news_title"><a href="#">Good healthcare is not just about treating sickness<br>
+                                     but about fostering a lifetime of well-being.</a></div>
+                                <div class="footer_news_date dynamic-date"></div>
+                            </li>
+                            <!-- <li>
+                                <div class="footer_news_title"><a href="#">Health is wealth</a></div>
+                                <div class="footer_news_date dynamic-date"></div>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="copyright_content d-flex flex-lg-row flex-column align-items-lg-center justify-content-start">
+                        <div class="cr">
+               Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |  made with <i class="fa fa-heart-o" aria-hidden="true"></i> by STIE
+</div>
+                        <div class="footer_social ml-lg-auto">
+                            <ul>
+                                
+                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>			
+    </div>
+</footer>
+
+<script> 
+    // Function to format the current date
+    function getFormattedDate() {
+        const today = new Date();
+        const options = { year: "numeric", month: "long", day: "numeric" }; // Example: "January 27, 2025"
+        return today.toLocaleDateString("en-US", options);
+    }
+
+    // Add the current date to all elements with the class 'dynamic-date'
+    function updateDates() {
+        const dateElements = document.querySelectorAll(".dynamic-date");
+        const currentDate = getFormattedDate();
+
+        dateElements.forEach((element) => {
+            element.textContent = currentDate;
+        });
+    }
+
+    // Run the script when the DOM is fully loaded
+    document.addEventListener("DOMContentLoaded", updateDates);
+</script>
